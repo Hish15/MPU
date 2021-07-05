@@ -136,7 +136,7 @@ class MPU9250 : public MPUIMU {
 
 
         // These can be overridden by calibrateMagnetometer()
-        float _magBias[3] = {0,0,0};
-        float _magScale[3] = {1,1,1};
+        float _magBias[3] = {23.0f,446.0f,-70.f};//{0,0,0}
+        float _magScale[3] = {1.f, 0.96596f, 1.03404f};//{1,1,1};
 
 }; // class MPU9250
